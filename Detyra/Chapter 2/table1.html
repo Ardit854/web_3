@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.12: table1.html -->
+<!-- Creating a basic table. --> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>A simple HTML5 table</title>
+		<style>
+			.button{
+			background-color:rgba(255, 0, 0, 0.788);
+			padding: 0 3px 0 3px;
+			border-radius: 15px;
+			}
+			.button:hover{
+				background-color:rgba(255, 0, 0, 0.788);
+				padding: 0 3px 0 3px;
+				border-radius: 15px; 
+				box-shadow: black 0 3px 3px 0;
+			}
+			.left{
+				width: 80px;
+				width: 70px;
+			}
+		</style> 
+		<script>
+			function goBack() 
+			{
+				window.history.back();
+			}
+		</script> 
+		
+	</head>
+
+	<body>
+		<button onclick="goBack()" class="button"><img class="left" src="left.png"></button>
+
+		<!-- the <table> tag opens a table -->
+		<table border = "1">
+
+			<!-- the <caption> tag summarizes the table's  -->
+			<!-- contents (this helps visually impaired people) -->
+			<caption><strong>Table of Fruits (1st column) and Their Prices (2nd column)</strong></caption>
+
+			<!-- the <thead> section appears first in the table -->
+			<!-- it formats the table header area -->
+			<thead>
+				<tr> <!-- <tr> inserts a table row -->
+					<th>Fruit</th> <!-- inserts a heading cell -->
+					<th>Price</th>
+				</tr>
+			</thead>
+			<!-- the <tfoot> section appears last in the table -->
+			<!-- it formats the table footer -->
+			<tfoot>
+				<tr>
+					<th>Total</th>
+					<th>$3.75</th>
+				</tr>
+			</tfoot>
+
+			<!-- all table content is enclosed -->
+			<!-- within the <tbody> -->
+			<tbody>
+				<tr>
+					<td>Apple</td> <!-- insert a data cell -->
+					<td>$0.25</td>
+				</tr>
+				<tr>
+					<td>Orange</td>
+					<td>$0.50</td>
+				</tr>
+				<tr>
+					<td>Banana</td>
+					<td>$1.00</td>
+				</tr>
+				<tr>
+					<td>Pineapple</td>
+					<td>$2.00</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+
+<!-- Fig. 5.13: skew.html --> 
+<!-- Skewing and transforming elements in CSS3. --> 
+<html> 
+<head> 
+	<meta charset="utf-8">
+	<title>Skew</title> 
+	<style type = "text/css"> 
+		.skew .textbox 
+		{
+			margin-left: 75px; 
+			background: lightgreen; 
+			height: 100px; 
+			width: 200px; 
+			padding: 25px 0; 
+			text-align: center; 
+			font-size: 250%; 
+			border: 3px solid darkgreen; 
+			border-radius: 15px; 
+			-webkit-animation: skew 3s infinite linear; 
+			-moz-animation: skew 3s infinite linear;
+			animation: skew 3s infinite linear;
+		}
+		@-moz-webkit-keyframes skew 
+		{ 
+			from { -webkit-transform: skewX(0deg); }
+			25% {-webkit-transform: skewX(45deg); } 
+			50% { -webkit-transform: skewX(0); } 
+			75% { -webkit-transform: skewX(-45deg); }
+			to { -webkit-transform: skewX(0); } 
+		}
+		@-moz-keyframes skew 
+		{
+			from { -webkit-transform: skewX(0deg); }
+			25% { -webkit-transform: skewX(45deg); }
+			50% { -webkit-transform: skewX(0); } 
+			75% { -webkit-transform: skewX(-45deg); }
+			to { -webkit-transform: skewX(0); } 
+		} 
+		@-moz-keyframes skew
+		{ 
+			from { -webkit-transform: skewX(0deg); } 
+			25% {-webkit-transform: skewX(45deg); } 
+			50% { -webkit-transform: skewX(0); } 
+			75% {-webkit-transform: skewX(-45deg); } 
+			to {-webkit-transform: skewX(0); } 
+		}
+		.button{
+			background-color:rgba(255, 0, 0, 0.788);
+			padding: 0 3px 0 3px;
+			border-radius: 15px;
+		}
+		.button:hover{
+			background-color:rgba(255, 0, 0, 0.788);
+			padding: 0 3px 0 3px;
+			border-radius: 15px; 
+			box-shadow: black 0 3px 3px 0;
+		}
+		.left{
+			width: 80px;
+			width: 70px;
+		}
+	</style> 
+	<script>
+		function goBack() 
+		{
+			window.history.back();
+		}
+	</script> 
+	
+</head> 
+<body> 
+	<button onclick="goBack()" class="button"><img class="left" src="left.png"></button>
+
+	<div class= "box skew">
+		<div class="textbox">Skewing Text</div>
+	</div>
+</body> 
+</html> 

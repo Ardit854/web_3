@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.4: contact.html -->
+<!-- Linking to an e-mail address. --> 
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Page</title>
+		<style>
+			.button{
+				background-color:rgba(255, 0, 0, 0.788);
+				padding: 0 3px 0 3px;
+				border-radius: 15px;
+			}
+			.button:hover{
+				background-color:rgba(255, 0, 0, 0.788);
+				padding: 0 3px 0 3px;
+				border-radius: 15px; 
+				box-shadow: black 0 3px 3px 0;
+			}
+			.left{
+				width: 80px;
+				width: 70px;
+			}
+		</style> 
+		<script>
+			function goBack() 
+			{
+				window.history.back();
+			}
+		</script> 
+		
+	</head>
+
+	<body>
+		<button onclick="goBack()" class="button"><img class="left" src="left.png"></button> 
+
+		<p>
+			To write to <a href= " mailto:deitel@deitel.com">Deitel & Associates, Inc.</a>, click the link ang your deafult email client will open an email message and address it to us.
+		</p>
+	</body>
+</html>

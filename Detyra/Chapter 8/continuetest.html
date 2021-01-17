@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+
+<!-- Fig. 8.12: ContinueTest.html --> 
+<!-- Using the continue statement in a for statement. --> 
+<html> 
+    <head> 
+        <meta charset = "utf-8"> 
+        <title> Using the continue Statement in a for Statement </title> 
+        <script> 
+            function goBack() 
+		{
+			window.history.back();
+		}
+            for ( var count = 1; count <= 10; ++count )  
+            { 
+                if ( count == 5 ) 
+                    continue; // skip remaining loop code only if count = 5 
+                
+                document.writeln( count + ""); } //end for
+            
+                document.writeln( "<p>Used continue to skip printing 5</p>" ); 
+        </script> 
+        <style>
+            .button{
+		background-color:rgba(255, 0, 0, 0.788);
+		padding: 0 3px 0 3px;
+		border-radius: 15px;
+		}
+		.button:hover{
+			background-color:rgba(255, 0, 0, 0.788);
+			padding: 0 3px 0 3px;
+			border-radius: 15px; 
+			box-shadow: black 0 3px 3px 0;
+		}
+		.left{
+			width: 80px;
+			width: 70px;
+		}
+        </style>
+    </head> 
+    <body>
+        <button onclick="goBack()" class="button"><img class="left" src="left.png"></button>
+    </body> 
+</html>

@@ -1,0 +1,232 @@
+/*inheritance*/
+body{ 
+    background:radial-gradient( white, #efd9c1 );
+}
+hr{
+width: 400px;
+float: left;
+margin:0;
+}
+footer{
+text-align: center;
+}
+.menu{
+display:flex;
+justify-content: space-between;
+align-items:center;
+}
+div nav li{
+display: inline;
+padding: 10px;
+font-size: 25px;
+font-family: 'Roboto', sans-serif;
+}
+.nav_assgm{
+padding-bottom: 2px;
+border-bottom: 4px solid #cccbc67a;
+}
+.nav_home,.nav_resume, .nav_assgm, .nav_contact, .nav_aboutme{
+	color:  rgba(165, 42, 42, 0.582);
+}
+.nav_home:hover, .nav_resume:hover,  .nav_assgm:hover, .nav_contact:hover, .nav_aboutme:hover{
+	transition: .2s;
+	-webkit-text-stroke: 1px rgba(165, 42, 42, 0.582);
+	padding-bottom: 2px;
+	border-bottom: 4px solid #cccbc67a;
+}
+a:link {
+text-decoration: none;
+}
+/* ending of inheritance*/
+
+/* assignments */
+.latest-projects{
+    color: rgba(158, 158, 158, 0.986);
+    font-family: Comic Sans MS;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    padding-top: 50px;
+}
+.homework{
+    padding: 40px 0 20px 10px;
+    font-size: 40px;
+    color: #a9b7c0b2;
+    width: 70%;
+    border-bottom:2px #a9b7c0 solid;
+}
+.stroke-img{
+    padding: 0 15px;
+    font-size: 64px;
+    color: cornflowerblue;
+    -webkit-text-stroke: black 2px ;
+}
+.chapters{
+    padding-top:10px;
+    margin-left: 2%;
+}
+.nth-child{
+    border-radius: 5px;
+    width: 290px;
+    height: 210px;
+    margin: 2.5px;
+    border: black 2px dashed;
+    display: inline-block;
+}
+.nth-child:hover{
+    transition: .1s;
+    width: 300px;
+    height: 210px;
+    margin: 2.5px;
+    margin-left:-1px;
+    border: black 2px dashed;
+    display: inline-block;
+    box-shadow: black 0 10px 10px 0;
+}
+.img-projects{
+    border-radius: 5px;
+    width: 290px;
+    height: 210px;
+}
+.img-projects:hover{
+    width: 300px;
+    height: 210px;
+}
+/* ending of assignments */
+
+
+/* chapters' inheritance  */
+.back-button{
+    width: 70px;
+    height: 60px;
+    margin-left: 30px;
+}
+.title{
+    width: 85%;
+    margin: -5px auto;
+    text-align: center;
+    text-shadow: 4px 4px 6px dimgrey; 
+    font-size: 45px;
+    color: rgba(165, 42, 42, 0.555);
+}
+.examples{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    width: 100%;
+    margin: 40px auto;
+}
+.examples a{
+    border:2px rgba(165, 42, 42, 0.767) solid;
+    width :200px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #d4852fa1;
+    font-size: 30px;
+    padding: 2px;
+    margin:3px auto;
+}
+.examples a:hover{
+    border:3px rgba(165, 42, 42, 0.911) solid;
+    width :200px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #d4842f93;
+    font-size: 30px;
+    margin:3px auto;
+}
+
+/* media queries */
+
+/* phone */
+
+@media only screen and (min-width:0px) and (max-width:375px){
+    .menu{
+		flex-direction: column;
+		justify-content: center;
+	}
+	div nav li{
+		display: block;
+	}
+    .latest-projects{
+        font-size: 30px;
+        padding-top: 40px;
+    }
+    .homework{
+        font-size: 30px;
+        color: #a9b7c0b2;
+        width: 100%;
+        margin-left: -7px;
+        text-align: center;
+    }
+    .stroke-img{
+        padding: 0 15px;
+        font-size: 60px;
+        color: cornflowerblue;
+        -webkit-text-stroke: black 2px ;
+    }
+    .chapters{
+        padding-top:10px;
+        margin-left: 8%;
+    }
+    .nth-child{
+        border-radius: 5px;
+        width: 290px;
+        height: 210px;
+        margin: 2.5px;
+        border: black 2px dashed;
+        display: inline-block;
+    }
+    .nth-child:hover{
+        transition: .1s;
+        width: 300px;
+        height: 210px;
+        margin: 2.5px;
+        margin-left:-1px;
+        border: black 2px dashed;
+        display: inline-block;
+        box-shadow: black 0 10px 10px 0;
+    }
+    .chapters{
+        padding-top:10px;
+        margin-left: 8%;
+    }
+}
+
+/* tablet */
+
+@media only screen and (min-width:376px) and (max-width:768px){
+    .latest-projects{
+        text-align: center;
+        width: 100%;
+        font-size: 50px;
+        padding-top: 50px;
+    }
+    .homework{
+        padding: 40px 0 20px 10px;
+        font-size: 40px;
+        color: #a9b7c0b2;
+        text-align: center;
+        width: 80%;
+        border-bottom:2px #a9b7c0 solid;
+    }
+    .chapters{
+        margin-left: 8%;
+        align-content: center;
+    }
+    .nth-child{
+        margin-left: 1.5%;
+    }
+}
+
+/* laptop */
+
+@media only screen and (min-width:769px) and (max-width:1440px){
+
+    .chapters{
+        padding-top:10px;
+        margin-left: 6%;
+    }
+}

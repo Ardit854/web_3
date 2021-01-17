@@ -1,0 +1,149 @@
+/*inheritance*/
+body{ 
+		background:radial-gradient( white, #efd9c1 );
+}
+hr{
+	width: 400px;
+	float: left;
+	margin:0;
+}
+footer{
+	text-align: center; 
+}
+.menu{
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+div nav li{
+	display: inline;
+	padding: 10px;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+}
+.nav_aboutme{
+	padding-bottom: 2px;
+	border-bottom: 4px solid #cccbc67a;
+}
+.nav_home,.nav_resume, .nav_assgm, .nav_contact, .nav_aboutme{
+	color:  rgba(165, 42, 42, 0.582);
+}
+.nav_home:hover, .nav_resume:hover,  .nav_assgm:hover, .nav_contact:hover, .nav_aboutme:hover{
+	transition: .2s;
+	-webkit-text-stroke: 1px rgba(165, 42, 42, 0.582);
+	padding-bottom: 2px;
+	border-bottom: 4px solid #cccbc67a;
+}
+a:link {
+	text-decoration: none;
+  }
+ /*inheritance */
+
+ .about-me{
+    color: rgba(158, 158, 158, 0.986);
+    font-family: Comic Sans MS;
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+}
+.columns{
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	margin:auto;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items:center;
+
+}
+.column-1{
+	background-color: #f4f4f4;
+	border-radius: 10%;
+	font-size: 20px;
+	padding: 2%;
+	width: 35%;
+}
+.column-2{
+	border: 1px black solid;
+	border-radius: 20%;
+}
+
+/* media queries */
+/* phone */
+
+@media only screen and (min-width:0px) and (max-width:375px){
+	.menu{
+		flex-direction: column;
+		justify-content: center;
+	}
+	div nav li{
+		display: block;
+	}
+	.about-me{
+		font-size: 40px;
+	}
+	.columns{
+		width: 85%;
+		height: 500px;
+		background-image:url(2myPhoto.png);
+		background-repeat: no-repeat;  
+		background-size:cover;
+	
+	}
+	.column-1{
+		background: none;
+		border-radius: 4%;
+		font-size: 22px;
+		width: 95%;
+		font-weight: bolder;
+		padding: 2%;
+		margin-top: 90px;
+	}
+	.column-2{
+		display: none;
+	}
+
+}
+
+/* tablet */
+
+@media only screen and (min-width:376px) and (max-width:768px){
+	.columns{
+		width: 90%;
+	}
+	.column-1{
+		width: 40%;
+	}
+	.column-2{
+		width: 360px;
+		height: 460px;
+	}
+}
+
+/* laptop */
+
+@media only screen and (min-width:769px) and (max-width:1440px){
+	.about-me{
+		color: rgba(158, 158, 158, 0.986);
+		font-family: Comic Sans MS;
+		text-align: center;
+		width: 100%;
+		font-size: 50px;
+	}
+	.columns{
+		width: 75%;	
+	}
+	.column-1{
+		background-color: #f4f4f4;
+		border-radius: 10%;
+		font-size: 20px;
+		padding: 4%;
+		width: 35%;
+	}
+	.column-2{
+		margin-top: 20px;
+	}
+	footer{
+		margin-top:90px;
+	}
+}
